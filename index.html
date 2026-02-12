@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es-ES">
 
 <head>
@@ -17,9 +18,8 @@
         <nav>
             <div class="logo">KEJERU</div>
             <ul class="nav-links">
-                <li><a href="#bundles">Bundles</a></li>
-                <li><a href="#singles">Singles</a></li>
-                <li><a href="#packs">Sobres</a></li>
+                <li><a href="#magic">Magic</a></li>
+                <li><a href="#pokemon">Pokémon</a></li>
             </ul>
         </nav>
     </header>
@@ -28,98 +28,136 @@
         <div class="hero-content">
             <h1>Eleva tu Colección</h1>
             <p>Cartas exclusivas, bundles curados y los mejores sobres.</p>
-            <a href="#bundles" class="btn btn-primary">Ver Colección</a>
+            <div class="hero-buttons">
+                <a href="#magic" class="btn btn-primary">Magic: The Gathering</a>
+                <a href="#pokemon" class="btn btn-secondary"
+                    style="margin-left: 1rem; color: white; border-color: white;">Pokémon TCG</a>
+            </div>
         </div>
     </section>
 
     <main>
-        <section id="bundles" class="category-section">
-            <div class="section-header">
-                <h2>Bundles</h2>
-                <p>Paquetes seleccionados para el coleccionista exigente</p>
+        <!-- Magic Section -->
+        <section id="magic" class="game-universe">
+            <div class="universe-header">
+                <h2>Magic: The Gathering</h2>
+                <hr>
             </div>
-            <div class="product-grid">
-                <!-- Placeholder Bundle Card 1 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Starter Bundle</h3>
-                        <p class="price">25.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
-                <!-- Placeholder Bundle Card 2 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Master Collection</h3>
-                        <p class="price">120.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
+
+            <div class="category-group">
+                <h3>Bundles</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Magic Starter Bundle</h3>
+                            <p class="price">29.99 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Commander Collection</h3>
+                            <p class="price">149.99 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <h3>Cartas Sueltas</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Black Lotus</h3>
+                            <p class="price">999.00 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Sol Ring</h3>
+                            <p class="price">15.00 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <h3>Sobres</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Modern Horizons 3</h3>
+                            <p class="price">12.00 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="singles" class="category-section">
-            <div class="section-header">
-                <h2>Cartas Sueltas</h2>
-                <p>Las piezas que te faltan</p>
+        <!-- Pokemon Section -->
+        <section id="pokemon" class="game-universe">
+            <div class="universe-header">
+                <h2>Pokémon TCG</h2>
+                <hr>
             </div>
-            <div class="product-grid">
-                <!-- Placeholder Single Card 1 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Blue Eyes Dragon</h3>
-                        <p class="price">45.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
-                <!-- Placeholder Single Card 2 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Black Lotus</h3>
-                        <p class="price">999.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
-                <!-- Placeholder Single Card 3 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Charizard Holo</h3>
-                        <p class="price">350.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
-            </div>
-        </section>
 
-        <section id="packs" class="category-section">
-            <div class="section-header">
-                <h2>Sobres</h2>
-                <p>La emoción de la apertura</p>
+            <div class="category-group">
+                <h3>Bundles</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Trainer Box Elite</h3>
+                            <p class="price">55.00 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="product-grid">
-                <!-- Placeholder Pack Card 1 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Booster Pack Set 1</h3>
-                        <p class="price">5.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
-                <!-- Placeholder Pack Card 2 -->
-                <article class="product-card">
-                    <div class="card-image placeholder"></div>
-                    <div class="card-info">
-                        <h3>Premium Pack</h3>
-                        <p class="price">15.00 €</p>
-                        <button class="btn btn-secondary">Añadir</button>
-                    </div>
-                </article>
+
+            <div class="category-group">
+                <h3>Cartas Sueltas</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Charizard Base Set</h3>
+                            <p class="price">350.00 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>Pikachu Illustrator</h3>
+                            <p class="price">5000.00 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <h3>Sobres</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="card-image placeholder"></div>
+                        <div class="card-info">
+                            <h3>151 Booster Pack</h3>
+                            <p class="price">6.99 €</p>
+                            <button class="btn btn-secondary">Añadir</button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>

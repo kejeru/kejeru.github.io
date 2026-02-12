@@ -1,9 +1,13 @@
 /* Reset & Base Styles */
 :root {
-    --bg-color: #f8f9fa; /* Off-white */
-    --text-color: #2c2c2c; /* Dark Grey */
-    --accent-color: #1a1a1a; /* Almost Black */
-    --secondary-color: #6c757d; /* Grey */
+    --bg-color: #f8f9fa;
+    /* Off-white */
+    --text-color: #2c2c2c;
+    /* Dark Grey */
+    --accent-color: #1a1a1a;
+    /* Almost Black */
+    --secondary-color: #6c757d;
+    /* Grey */
     --font-heading: 'Cinzel', serif;
     --font-body: 'Inter', sans-serif;
     --spacing-unit: 1rem;
@@ -22,7 +26,9 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--accent-color);
@@ -48,7 +54,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     background-color: var(--bg-color);
     position: sticky;
     top: 0;
@@ -80,7 +86,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(248,249,250,0.9), rgba(248,249,250,0.9)), url('https://images.unsplash.com/photo-1620336655104-c5a472c6762c?q=80&w=2070&auto=format&fit=crop'); /* Placeholder abstract luxury bg */
+    background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), url('https://images.unsplash.com/photo-1620336655104-c5a472c6762c?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
 }
@@ -111,6 +117,7 @@ header {
     letter-spacing: 1px;
     font-size: 0.8rem;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .btn-primary {
@@ -141,23 +148,39 @@ main {
     padding: 4rem 5%;
 }
 
-.category-section {
-    margin-bottom: 6rem;
+.game-universe {
+    margin-bottom: 8rem;
+    scroll-margin-top: 100px;
+    /* Offset for sticky header */
 }
 
-.section-header {
+.universe-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
-.section-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.universe-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.section-header p {
-    color: var(--secondary-color);
-    font-size: 1rem;
+.universe-header hr {
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    border: none;
+    margin: 0 auto;
+}
+
+.category-group {
+    margin-bottom: 4rem;
+}
+
+.category-group h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1rem;
 }
 
 /* Product Grid */
@@ -170,12 +193,12 @@ main {
 .product-card {
     background: white;
     padding: 1.5rem;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .card-image {
@@ -204,7 +227,7 @@ main {
 footer {
     text-align: center;
     padding: 3rem 5%;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     color: var(--secondary-color);
     font-size: 0.9rem;
 }
@@ -215,12 +238,20 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .nav-links {
         gap: 1.5rem;
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .hero-buttons .btn {
+        margin-bottom: 1rem;
+        display: block;
+        margin-left: 0 !important;
+        width: 100%;
+        text-align: center;
     }
 }
