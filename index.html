@@ -19,8 +19,9 @@
         <nav>
             <div class="logo">KEJERU</div>
             <ul class="nav-links">
-                <li><a href="#magic">Magic</a></li>
-                <li><a href="#pokemon">Pokémon</a></li>
+                <li><a href="magic.html">Magic</a></li>
+                <li><a href="pokemon.html">Pokémon</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
             </ul>
         </nav>
     </header>
@@ -30,134 +31,48 @@
             <h1>Eleva tu Colección</h1>
             <p>Cartas exclusivas, bundles y los mejores sobres.</p>
             <div class="hero-buttons">
-                <a href="#magic" class="btn btn-primary">Magic: The Gathering</a>
-                <a href="#pokemon" class="btn btn-secondary">Pokémon TCG</a>
+                <a href="magic.html" class="btn btn-primary">Magic: The Gathering</a>
+                <a href="pokemon.html" class="btn btn-secondary">Pokémon TCG</a>
             </div>
         </div>
     </section>
 
     <main>
-        <!-- Magic Section -->
-        <section id="magic" class="game-universe">
+        <section class="game-universe">
             <div class="universe-header">
-                <h2>Magic: The Gathering</h2>
-                <hr>
+                <h2>Explora nuestros mundos</h2>
             </div>
 
-            <div class="category-group">
-                <h3>Bundles</h3>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Magic Starter Bundle</h3>
-                            <p class="price">29.99 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Commander Collection</h3>
-                            <p class="price">149.99 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            <div class="product-grid">
+                <article class="product-card" onclick="window.location.href='magic.html'" style="cursor: pointer;">
+                    <div class="card-image placeholder"
+                        style="background: linear-gradient(135deg, #ddd6fe, #7c3aed); opacity: 0.8;"></div>
+                    <div class="card-info">
+                        <h3 style="font-size: 1.5rem; color: var(--magic-primary);">Magic: The Gathering</h3>
+                        <p>Bundles, cartas sueltas y sobres del multiverso.</p>
+                        <button class="btn btn-secondary" style="margin-top: 1rem;">Ver Magic</button>
+                    </div>
+                </article>
 
-            <div class="category-group">
-                <h3>Cartas Sueltas</h3>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Black Lotus</h3>
-                            <p class="price">999.00 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Sol Ring</h3>
-                            <p class="price">15.00 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
+                <article class="product-card" onclick="window.location.href='pokemon.html'" style="cursor: pointer;">
+                    <div class="card-image placeholder"
+                        style="background: linear-gradient(135deg, #fde68a, #fbbf24); opacity: 0.8;"></div>
+                    <div class="card-info">
+                        <h3 style="font-size: 1.5rem; color: #d97706;">Pokémon TCG</h3>
+                        <p>Hazte con todos. Colecciones y cartas raras.</p>
+                        <button class="btn btn-secondary" style="margin-top: 1rem;">Ver Pokémon</button>
+                    </div>
+                </article>
 
-            <div class="category-group">
-                <h3>Sobres</h3>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Modern Horizons 3</h3>
-                            <p class="price">12.00 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pokemon Section -->
-        <section id="pokemon" class="game-universe">
-            <div class="universe-header">
-                <h2>Pokémon TCG</h2>
-                <hr>
-            </div>
-
-            <div class="category-group">
-                <h3>Bundles</h3>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Trainer Box Elite</h3>
-                            <p class="price">55.00 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="category-group">
-                <h3>Cartas Sueltas</h3>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Charizard Base Set</h3>
-                            <p class="price">350.00 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>Pikachu Illustrator</h3>
-                            <p class="price">5000.00 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="category-group">
-                <h3>Sobres</h3>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="card-image placeholder"></div>
-                        <div class="card-info">
-                            <h3>151 Booster Pack</h3>
-                            <p class="price">6.99 €</p>
-                            <button class="btn btn-secondary">Añadir</button>
-                        </div>
-                    </article>
-                </div>
+                <article class="product-card" onclick="window.location.href='accesorios.html'" style="cursor: pointer;">
+                    <div class="card-image placeholder"
+                        style="background: linear-gradient(135deg, #e2e8f0, #94a3b8); opacity: 0.8;"></div>
+                    <div class="card-info">
+                        <h3 style="font-size: 1.5rem; color: #475569;">Accesorios</h3>
+                        <p>Fundas, tapetes y todo para proteger tus cartas.</p>
+                        <button class="btn btn-secondary" style="margin-top: 1rem;">Ver Accesorios</button>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
