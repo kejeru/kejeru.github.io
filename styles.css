@@ -106,6 +106,13 @@ header {
     margin-right: auto;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
 /* Buttons */
 .btn {
     padding: 1rem 2rem;
@@ -134,7 +141,6 @@ header {
     background-color: transparent;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
-    width: 100%;
     margin-top: 1rem;
 }
 
